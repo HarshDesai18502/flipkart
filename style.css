@@ -4,9 +4,13 @@
     margin: 0;
     padding: 0;
 }
+
+html,
 body {
+    height: 100%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
-    background-color:#f1f3f6;
+    background-color: white;
 }
 
 :root {
@@ -22,7 +26,8 @@ header {
     background-color: var(--primary-color);
     height: 56px;
 }
-header .nav-container{
+
+header .nav-container {
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
@@ -30,12 +35,14 @@ header .nav-container{
     max-width: 1248px;
     margin: 0 auto;
 }
+
 header .nav-container .logo {
     display: flex;
     min-width: 137px;
     justify-content: flex-end;
 }
-header .nav-container .logo img{
+
+header .nav-container .logo img {
     width: 75px;
 }
 
@@ -45,7 +52,8 @@ header .search {
     align-items: center;
     margin-left: 12px;
 }
-header .search .search-container{
+
+header .search .search-container {
     width: 540px;
     height: 36px;
     background-color: white;
@@ -53,12 +61,14 @@ header .search .search-container{
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
     display: flex;
 }
+
 header .search .search-container input {
     width: calc(100% - 32px);
     padding: 16px;
     outline: none;
     border: none;
 }
+
 header .search .search-container button {
     width: 36px;
     height: 100%;
@@ -130,6 +140,7 @@ header .cart svg {
     background-color: white;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
+
 .section-1-container {
     width: 1280px;
     margin: 0 auto;
@@ -163,6 +174,7 @@ header .cart svg {
     font-size: 14px;
     font-weight: 500;
 }
+
 .section2 {
     height: 288px;
     width: 100%;
@@ -194,15 +206,17 @@ header .cart svg {
     margin-left: 150px;
 }
 
-.products{
+.products {
     margin: 150px;
     display: absolute;
 }
-.productcategory{
+
+.productcategory {
     display: flex;
 }
-.product-heading{
-    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/11928d56749b68e7.jpg?q=90');
+
+.product-heading {
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/1e483f8045ec13a8.jpg?q=90');
     background-position: bottom;
     background-repeat: no-repeat;
     /* padding: 40px 0; */
@@ -215,34 +229,56 @@ header .cart svg {
     border: 0.5px solid rgb(216, 210, 210);
     padding-left: 20px;
 }
-.product-category-title{
+
+.electronic-product-heading {
+    background-image: url('https://rukminim1.flixcart.com/fk-p-flap/278/278/image/11928d56749b68e7.jpg?q=90');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20%;
+    height: 325px;
+    border: 0.5px solid rgb(216, 210, 210);
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.product-category-title {
     font-size: 26px;
     font-weight: bold;
     margin: 20px 0;
 }
-.product-viewall{
+
+.product-viewall {
     background-color: #0275d8;
     color: white;
     border: none;
     margin: 20px 0;
     padding: 10px 30px;
 }
-.product-viewall:hover{
+
+.product-viewall:hover {
     box-shadow: 0 0 2px #0275d8;
 }
-.productrow{
+
+.productrow {
     background-color: white;
     margin: 20px 0;
     display: flex;
     overflow: auto;
 }
-.productItem{
+
+.productItem {
     display: flex;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
 }
-.productimg{
+
+.productimg {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,21 +287,26 @@ header .cart svg {
     overflow: hidden;
     transition-duration: 400ms;
 }
-.productimg:hover{
+
+.productimg:hover {
     transform: scale(0.9);
 }
-.producttext{
+
+.producttext {
     text-align: center;
     font-size: 14px;
-    line-height:14px;
+    line-height: 14px;
 }
-.producttitle{
+
+.producttitle {
     font-weight: 500;
 }
-.productprice{
+
+.productprice {
     color: #477d3c;
 }
-.productcompany{
+
+.productcompany {
     color: gray;
 }
 
@@ -277,11 +318,91 @@ header .cart svg {
     background-color: #f1f3f6;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 
 .price-tag {
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-    grid-column-gap: 40px;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 15px;
+    background-color: #f1f3f6;
+    box-sizing: border-box;
+}
+
+.price-tag img {
+    margin: 10px 0;
+    margin-left: 10px;
+}
+
+#footer {
+    background-color: #003366;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.linkdiv {
+    font-size: 12px;
+    /* margin-left: 50px; */
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.linkpartition {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 0 0;
+}
+
+.linktitle {
+    color: #a6a6a6;
+    margin-bottom: 10px;
+}
+
+.footerlink {
+    text-decoration: none;
+    color: white;
+    line-height: 24px;
+}
+
+.footerlink:hover {
+    text-decoration: underline;
+}
+
+.mailaddress {
+    margin-top: 10px;
+}
+
+.mailaddress p {
+    line-height: 4px;
+}
+
+.footer-features {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    padding: 9px 0 25px;
+}
+
+.footerFeatureLink {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footerFeatureText {
+    font-size: 14px;
+}
+
+.footerFeatureImg {
+    margin-right: 8px;
+    vertical-align: text-top;
+}
+
+hr {
+    background-color: #a6a6a6;
 }
